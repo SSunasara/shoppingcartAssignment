@@ -1,0 +1,18 @@
+<div class="container card">
+    <div class="card-header">
+        <h2>Login</h2>
+    </div>
+    <div class="card-body">
+        Email : <input type="email" class="form-control-sm" [(ngModel)]="email"><br>
+        <label class="text-danger">{{ emailerror }}</label><br>
+        Password : <input type="password" class="form-control-sm" [(ngModel)]="pass"><br>
+        <label class="text-danger">{{ passerror }}</label><br>
+    </div>
+    <div class="card-footer">
+        <!-- <a routerLink="/list" class="btn btn-primary p-2">Login</a> -->
+        <input type="button" class="btn btn-primary p-2" value="LogIn" (click)="login()">
+    </div>
+    <a routerLink="/databinding" class="btn btn btn-success p-2 mt-5">Data Binding Demo Example</a>
+    <a routerLink="/directive" class="btn btn btn-success p-2 mt-5">Directive Demo Example</a>
+</div>
+

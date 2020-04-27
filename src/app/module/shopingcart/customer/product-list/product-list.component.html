@@ -1,0 +1,11 @@
+<div class="container-fluid d-flex flex-wrap">
+<div class="card m-3" style="width: 18rem;" *ngFor="let p of products">
+    <img class="card-img-top" src="{{ p.Image }}" alt="Card image cap" height="200px" width="auto">
+    <div class="card-body">
+      <h2>{{ p.index }}</h2>
+      <h5 class="card-title">{{ p.ProdName }}</h5>
+      <p class="card-text">{{ p.Price }}</p>
+      <a routerLink="/product/detail/{{ p.Id }}" class="btn btn-primary">View Detail</a>
+    </div>
+</div>
+</div>
